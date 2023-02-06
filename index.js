@@ -53,7 +53,7 @@ function isLGSeven(number) {
 // console.log(biyogfol)
 
 function findingBadData(numbers) {
-
+    // Description: This function accepts an array of numbers as a parameter, then counts the negative (less than 0) numbers from that array and returns that count.
     if (Array.isArray(numbers) === false) {
         return 'input should be an array '
 
@@ -67,19 +67,18 @@ function findingBadData(numbers) {
         }
     }
 
-    let negativeData = 0
+    let negativeNumber = 0
     for (let i = 0; i < numbers.length; i++) {
         const number = numbers[i]
         if (number < 0) {
-            negativeData++
+            negativeNumber++
         }
     }
-    return negativeData
+    return negativeNumber
 }
-const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, 0];
+const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, -1, -0];
 const badData = findingBadData(numbersArray)
 console.log(badData)
-
 
 
 
