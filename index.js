@@ -61,7 +61,30 @@ function findingBadData(numbers) {
     }
     return negativeData
 }
-const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9]
+const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9];
+const arr = ['amar', 'tomar']
 const obj = { name: 'fd' }
-const badData = findingBadData(numbersArray)
+const badData = findingBadData(arr)
 console.log(badData)
+
+function gemsToDiamond(fr1Gems, fr2Gems, fr3Gems) {
+    if (
+        typeof fr1Gems !== 'number' || fr1Gems < 1 ||
+        typeof fr2Gems !== 'number' || fr2Gems < 1 ||
+        typeof fr3Gems !== 'number' || fr1Gems < 1) {
+        return 'input should be a number greater than 0'
+    }
+    const friend1Diamonds = fr1Gems * 21;
+    const friend2Diamonds = fr2Gems * 32;
+    const friend3Diamonds = fr3Gems * 43;
+    const totalDiamonds = friend1Diamonds + friend2Diamonds + friend3Diamonds;
+    if (totalDiamonds >= 1000 * 2) {
+        const restDiamond = totalDiamonds - 2000;
+        return restDiamond
+    }
+    else {
+        return totalDiamonds
+    }
+}
+// const diamond = gemsToDiamond(100, 5, 1)
+// console.log(diamond)
