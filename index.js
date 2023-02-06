@@ -1,4 +1,5 @@
 function mindGame(number) {
+    // Description: This function receives a number and multiplies that number by 3, then adds 10, then divides by 2, then subtracts 5 from the quotient and returns the subtraction. 
     if (typeof number !== 'number' || number < 1) {
         return 'input should be a number greater than 1'
     }
@@ -8,8 +9,8 @@ function mindGame(number) {
     const result = division - 5;
     return result;
 }
-// const gameREsult = mindGame(50)
-// console.log(gameREsult)
+const gameREsult = mindGame(5)
+console.log(gameREsult)
 
 
 
@@ -71,9 +72,9 @@ function findingBadData(numbers) {
     }
     return negativeData
 }
-const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9];
-const badData = findingBadData(numbersArray)
-console.log(badData)
+// const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9];
+// const badData = findingBadData(numbersArray)
+// console.log(badData)
 
 
 
