@@ -43,13 +43,13 @@ function isLGSeven(number) {
 
     }
     else {
-        const double = subtraction * 2;
+        const double = number * 2;
         return double;
     }
 
 }
 
-// const biyogfol = isLGSeven(14)
+// const biyogfol = isLGSeven(30)
 // console.log(biyogfol)
 
 function findingBadData(numbers) {
@@ -70,15 +70,15 @@ function findingBadData(numbers) {
     let negativeData = 0
     for (let i = 0; i < numbers.length; i++) {
         const number = numbers[i]
-        if (number < 1) {
+        if (number < 0) {
             negativeData++
         }
     }
     return negativeData
 }
-// const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9];
-// const badData = findingBadData(numbersArray)
-// console.log(badData)
+const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, 0];
+const badData = findingBadData(numbersArray)
+console.log(badData)
 
 
 
