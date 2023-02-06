@@ -48,8 +48,18 @@ function isLGSeven(number) {
 // console.log(biyogfol)
 
 function findingBadData(numbers) {
+
     if (Array.isArray(numbers) === false) {
-        return 'input should be a array of number'
+        return 'input should be an array '
+
+    }
+    else {
+        for (let i = 0; i < numbers.length; i++) {
+            if (typeof numbers[i] !== 'number') {
+                return 'array items should be a number'
+            }
+
+        }
     }
 
     let negativeData = 0
@@ -62,10 +72,13 @@ function findingBadData(numbers) {
     return negativeData
 }
 const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9];
-const arr = ['amar', 'tomar']
-const obj = { name: 'fd' }
-const badData = findingBadData(arr)
+const badData = findingBadData(numbersArray)
 console.log(badData)
+
+
+
+
+
 
 function gemsToDiamond(fr1Gems, fr2Gems, fr3Gems) {
     if (
