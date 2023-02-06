@@ -9,10 +9,6 @@ function mindGame(number) {
     const result = division - 5;
     return result;
 }
-// const gameREsult = mindGame([5])
-// console.log(gameREsult)
-
-
 
 function evenOdd(str) {
     // Description: This function takes a string as a parameter  then extracts the number of characters from that string, if the number of characters is even then it will return even and if it is odd then it will return odd.
@@ -27,10 +23,6 @@ function evenOdd(str) {
         return 'odd'
     }
 }
-// const evenResult = evenOdd('chatgpt')
-// console.log(evenResult)
-
-
 
 function isLGSeven(number) {
     // Description:This function takes a number as a parameter and returns the difference with 7. If the difference is less than 7 it will return that difference and if the difference is greater than 7 then it will return double the difference.
@@ -48,9 +40,6 @@ function isLGSeven(number) {
     }
 
 }
-
-// const biyogfol = isLGSeven(30)
-// console.log(biyogfol)
 
 function findingBadData(numbers) {
     // Description: This function accepts an array of numbers as a parameter, then counts the negative (less than 0) numbers from that array and returns that count.
@@ -76,33 +65,27 @@ function findingBadData(numbers) {
     }
     return negativeNumber
 }
-// const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, -1, -0];
-// const badData = findingBadData(numbersArray)
-// console.log(badData)
-
-
-
-
 
 function gemsToDiamond(fr1Gems, fr2Gems, fr3Gems) {
     // Description: This function will take the gems of 3 friends as parameters. Then each friend will calculate how many diamonds they can take. If the diamond of 3 of them is equal to or more than twice 1000 then subtract 2000 from there and return the subtraction result. And if less than double of 1000 then only 3 will return total number of diamonds
     if (
         typeof fr1Gems !== 'number' || fr1Gems < 1 ||
         typeof fr2Gems !== 'number' || fr2Gems < 1 ||
-        typeof fr3Gems !== 'number' || fr1Gems < 1) {
+        typeof fr3Gems !== 'number' || fr3Gems < 1) {
         return 'input should be a number greater than 0'
     }
     const friend1Diamonds = fr1Gems * 21;
     const friend2Diamonds = fr2Gems * 32;
     const friend3Diamonds = fr3Gems * 43;
     const totalDiamonds = friend1Diamonds + friend2Diamonds + friend3Diamonds;
-    if (totalDiamonds >= 1000 * 2) {
+    if (totalDiamonds < 1000 * 2) {
+        return totalDiamonds
+
+    }
+    else {
         const restDiamond = totalDiamonds - 2000;
         return restDiamond
     }
-    else {
-        return totalDiamonds
-    }
 }
-const diamond = gemsToDiamond(20, 200, 50)
-console.log(diamond)
+
+
