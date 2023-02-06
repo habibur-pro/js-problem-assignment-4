@@ -1,5 +1,5 @@
 function mindGame(number) {
-    // Description: This function receives a number and multiplies that number by 3, then adds 10, then divides by 2, then subtracts 5 from the quotient and returns the subtraction. 
+    // Description:This function receives a number, multiplies that number by 3, then adds 10, then divides by 2, then subtracts 5 from the quotient and returns the subtraction.
     if (typeof number !== 'number' || number < 1) {
         return 'input should be a number greater than 1'
     }
@@ -9,12 +9,13 @@ function mindGame(number) {
     const result = division - 5;
     return result;
 }
-const gameREsult = mindGame(5)
-console.log(gameREsult)
+// const gameREsult = mindGame([5])
+// console.log(gameREsult)
 
 
 
 function evenOdd(str) {
+    // Description: This function takes a string as a parameter  then extracts the number of characters from that string, if the number of characters is even then it will return even and if it is odd then it will return odd.
     if (typeof str !== 'string' || str.length < 1) {
         return 'input should be a string and null string not allowed'
     }
@@ -28,6 +29,7 @@ function evenOdd(str) {
 }
 // const evenResult = evenOdd('chatgpt')
 // console.log(evenResult)
+
 
 
 function isLGSeven(number) {
