@@ -33,21 +33,23 @@ function evenOdd(str) {
 
 
 function isLGSeven(number) {
+    // Description:This function takes a number as a parameter and returns the difference with 7. If the difference is less than 7 it will return that difference and if the difference is greater than 7 then it will return double the difference.
     if (typeof number !== 'number') {
         return 'input should be a number'
     }
     const subtraction = number - 7;
-    if (subtraction > 7) {
-        const double = subtraction * 2;
-        return double;
+    if (subtraction < 7) {
+        return subtraction;
+
     }
     else {
-        return subtraction;
+        const double = subtraction * 2;
+        return double;
     }
 
 }
 
-// const biyogfol = isLGSeven(13)
+// const biyogfol = isLGSeven(14)
 // console.log(biyogfol)
 
 function findingBadData(numbers) {
