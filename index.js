@@ -76,15 +76,16 @@ function findingBadData(numbers) {
     }
     return negativeNumber
 }
-const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, -1, -0];
-const badData = findingBadData(numbersArray)
-console.log(badData)
+// const numbersArray = [1, 2, -6, - 9, -5, -33, -55, -9, -1, -0];
+// const badData = findingBadData(numbersArray)
+// console.log(badData)
 
 
 
 
 
 function gemsToDiamond(fr1Gems, fr2Gems, fr3Gems) {
+    // Description: This function will take the gems of 3 friends as parameters. Then each friend will calculate how many diamonds they can take. If the diamond of 3 of them is equal to or more than twice 1000 then subtract 2000 from there and return the subtraction result. And if less than double of 1000 then only 3 will return total number of diamonds
     if (
         typeof fr1Gems !== 'number' || fr1Gems < 1 ||
         typeof fr2Gems !== 'number' || fr2Gems < 1 ||
@@ -103,5 +104,5 @@ function gemsToDiamond(fr1Gems, fr2Gems, fr3Gems) {
         return totalDiamonds
     }
 }
-// const diamond = gemsToDiamond(100, 5, 1)
-// console.log(diamond)
+const diamond = gemsToDiamond(20, 200, 50)
+console.log(diamond)
